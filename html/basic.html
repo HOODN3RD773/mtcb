@@ -1,30 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
        <!-- meta data goes here -->
-       
-	<meta charset="utf8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    
-    <!-- my bootstrap responsive practice -->
 
+	<meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+    <img style="border-radius: 50%; float: right; margin-right: 1em;" src="..." alt="...">
+
+
+    <!-- my bootstrap responsive practice -->
+<!--
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" href="./Style.css" />
     <link rel="stylesheet" href="./mobile-style.css"/>
-
+    -->
     
-       <title> Hoodn3rd's Page </title>
+       <title> Toni B (HOODN3RD) HomePage </title>
     </head>
     <body>
         <header>
-
+            <span class="logo">My Website</span>
+            <a id="toggleMenu">Menu<a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </header>
+        
         <main>
+        <h1>Hello I'm Toni B</h1>
+        <img src="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64" alt="My Avatar">
+        <p>Welcome to my page. Microtrain Bootcamp page for class.</p>
+        
+            <h2>My Current Projects</h2>
+            <p>So over the past few years I've started a few personal businesses. In addition, I'm the graphic designer and web developer of all social site and website. Until now I've used webpage platforms to display my work. Below, you can view my online clothing store, my photography and graphic portfolio via Instagram, and my wife and son's catering business also via Instagram.</p>
+            <ul>
+                <li><a href="#">No FLTR Designs.</a></li>
+                <li><a href="#">Toni B. Studio Photography & Graphics</a></li>
+                <li><a href="#">Not Ya Mama's Kitchen</a></li>
+            </ul>
+            <h2>Summary</h2>
+            <p>In summation...</p>
+        <p>New elements such as <em>article, header, footer, nav, section, aside</em> allow screen readers to better understand your pages layout. This makes the web a better place for people with vision problems.</p>
+
+<ul>
+  <li><strong>article</strong> - a self contained composition.</li>
+  <li><strong>header</strong> - introductory content for a given section.</li>
+  <li><strong>footer</strong> - generally contains meta data for a given section. </li>
+  <li><strong>nav</strong> - provides navigation links for a website/page.</li>
+  <li><strong>section</strong> - a stand alone section similar to ```<div></div>```.</li>
+  <li><strong>aside</strong> - indirectly related to the main content.</li>
+</ul>
+
+<h2>ARIA</h2>
+<p><a href="https://www.w3.org/TR/html-aria/">ARIA</a> allows developer to specify page landmarks by assigning roles to specific elements. Much like semantic elements these landmarks mak it easier for screen reader to understand a webpage.</p>
+
+<h2>Multimedia</h2>
+<p>New elements such as <em>audio, video and canvas</em> add built in support for audio, video, gaming and web applications.</p>
+
+<h3>Audio</h3>
+<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio">audio</a> element embeds audio into a webpage without the use of awkward embed or object elements.</p>
+
+<h3>Video</h3>
+<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video">video</a> elements embeds video into a webpage without the use of awkward embed or object elements.</p>
+
+<h3>Canvas</h3>
+<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas">canvas</a> element allocates a section of the page as JavaScript application. Here you can create games, interactive applications or visual effects. Prior to canvas we were forced to use plugins or other non-standard methods such as Flash, SilverLight, ActiveX, Java Applets, etc.</p>
+
+<h2>Element Details</h2>
+<p>This section describes a number of default attributes associated with various HTML tags.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Display</th>
+      <th>Style</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>div</td>
+      <td>block</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>span</td>
+      <td>inline</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>p</td>
+      <td>block</td>
+      <td>
+        margin-top: 1em;
+        margin-bottom: 1em;
+      </td>
+    </tr>
+    <tr>
+      <td>a</td>
+      <td>inline</td>
+      <td>
+        color: (internal value);<br>
+        text-decoration: underline;<br>
+        cursor: auto;<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
         </main>
         <footer>
 
         </footer>
+        <script>
+
+            var toggleMenu = document.getElementById('toggleMenu');
+            var nav = document.querySelector('nav');
+            toggleMenu.addEventListener(
+              'click',
+              function(){
+                if(nav.style.display=='block'){
+                  nav.style.display='none';
+                }else{
+                  nav.style.display='block';
+                }
+              }
+            );
+          </script>
     </body>
 </html>
