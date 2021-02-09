@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       
+        <!-- meta data goes here -->
+
+	<meta charset="utf8">
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+    
+<title>Contact Form</title>
+    </head>
+<body>
+    <header>
+        <span class="logo">My Website</span>
+        <a id="toggleMenu">Menu<a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </nav>
+     <!-- form action="freeform contact form url goes here" method="POST"></form -->
+    </header>
+    <div>
+        <input type="hidden" name="_subject" value="New submission">
+    </div>
+    <div>
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name">
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input id="email" type="text" name="_replyto">
+    </div>
+    <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea> 
+    </div>
+
+     <!-- Datepicker -->
+  <label for="date">Date</label>
+  <input id="date" name="date" type="date">
+  
+  <!-- Textarea -->
+  <label for="description">Description</label>
+  <textarea id="description" name="description"></textarea>
+  
+  <!-- Picklist-->
+  <label for="pickOne">Choose an option</label>
+  <select id="pickOne" name="pickone">
+    <option>Please Choose an Option</option>
+    <option value="option1">Option 1</option>
+    <option value="option2" selected>Option 2</option>
+    <option value="option3">Option 3</option>
+  </select>
+  
+  <!-- Radio Options -->
+  <fieldset>
+    <legend>Choose yes or No</legend>
+  
+    <label for="r1">Yes</label>
+    <input id="r1" name="yn" value="y" type="radio">
+  
+    <label for="r2">No</label>
+    <input id="r2" name="yn" value="n" type="radio">
+  </fieldset>
+  
+  <!-- Checkbox Options -->
+  <fieldset>
+    <legend>Choose all that apply</legend>
+    <label for="c1">Option 1</label>
+    <input id="c1" name="all" value="0" type="checkbox">
+  
+    <label for="c2">Option 2</label>
+    <input id="c2" name="all" value="1" type="checkbox">
+  </fieldset>
+  
+  <!-- Form Buttons -->
+  <input type="submit" name="submit" value="Submit">
+  <input type="reset" name="reset" value="Reset">
+    <!-- <input type="text" name="_gotcha" style="display"-->
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+
+        var toggleMenu = document.getElementById('toggleMenu');
+        var nav = document.querySelector('nav');
+        toggleMenu.addEventListener(
+          'click',
+          function(){
+            if(nav.style.display=='block'){
+              nav.style.display='none';
+            }else{
+              nav.style.display='block';
+            }
+          }
+        );
+      </script>
+</body>
+</html>
